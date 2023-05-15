@@ -9,7 +9,7 @@ class CloudServiceCategorySerializer(ModelSerializer):
 class AttributeSerializer(ModelSerializer):
     class Meta:
         model = Attribute
-        fields= ['key','value']
+        fields= ['id','key','value']
 
 class CloudServiceSerializer(ModelSerializer):
     attributes = AttributeSerializer(read_only=True,many=True)
