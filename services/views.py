@@ -6,7 +6,7 @@ class CloudServiceCategoryList(generics.ListCreateAPIView):
     queryset = CloudServiceCategory.objects.all()
     serializer_class = CloudServiceCategorySerializer
 
-class  CloudServiceCategoryDetail(generics.UpdateAPIView):
+class  CloudServiceCategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset =  CloudServiceCategory.objects.all()
     serializer_class =  CloudServiceCategorySerializer
 
